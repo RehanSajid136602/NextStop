@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Preview the NextStop metro ticket booking interface."
+    />
+    <title>Book a ticket — NextStop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="NextStop home"
+          ><svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+            <rect x="2" y="2" width="32" height="32" rx="11" fill="#C81E1E" />
+            <path
+              d="M11 25V11h3.2l7 8.8V11H25v14h-3.1l-7.1-8.9V25z"
+              fill="#FFFFFF"
+            /></svg
+          >NEXTSTOP</a
+        >
+        <div class="nav-links">
+          <a href="index.html">Dashboard</a
+          ><a href="booking.html" aria-current="page">Booking</a
+          ><a href="terminals.html">Terminals</a
+          ><a href="lost-found.html">Lost &amp; Found</a
+          ><a href="complaints.html">Complaints</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <header class="page-heading">
+        <h1>Book your metro ticket</h1>
+        <p>
+          Enter a few trip details to preview a sample booking. This form does
+          not create a real ticket.
+        </p>
+      </header>
+      <div class="split-layout">
+        <section class="panel panel-pad" aria-labelledby="booking-form-title">
+          <h2 id="booking-form-title">BOOK YOUR METRO TICKET</h2>
+          <p class="panel-intro">
+            A simple trip planner for the Rawalpindi–Islamabad Red Line.
+          </p>
+          <form action="#" method="get">
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="passenger-name">Passenger name</label
+                ><input
+                  id="passenger-name"
+                  name="passenger"
+                  type="text"
+                  placeholder="Enter passenger name"
+                  autocomplete="name"
+                />
+              </div>
+              <div class="field">
+                <label for="booking-from">From station</label
+                ><select id="booking-from" name="from">
+                  <option value="" selected>Select station</option>
+                  <option>Saddar</option>
+                  <option>Marrir Chowk</option>
+                  <option>Liaquat Bagh</option>
+                  <option>Committee Chowk</option>
+                  <option>Waris Khan</option>
+                  <option>Chandni Chowk</option>
+                  <option>Rehmanabad</option>
+                  <option>6th Road</option>
+                  <option>Khatam-e-Nabuwat</option>
+                  <option>Faizabad</option>
+                  <option>IJP Road</option>
+                  <option>Potohar</option>
+                  <option>Khayaban-e-Johar</option>
+                  <option>Faiz Ahmed Faiz</option>
+                  <option>Kashmir Highway</option>
+                  <option>Chaman</option>
+                  <option>Ibn-e-Sina</option>
+                  <option>Katchery</option>
+                  <option>PIMS</option>
+                  <option>Stock Exchange</option>
+                  <option>7th Avenue</option>
+                  <option>Shaheed-e-Millat</option>
+                  <option>Parade Ground</option>
+                  <option>Pak Secretariat</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="booking-to">To station</label
+                ><select id="booking-to" name="to">
+                  <option value="" selected>Select station</option>
+                  <option>Saddar</option>
+                  <option>Marrir Chowk</option>
+                  <option>Liaquat Bagh</option>
+                  <option>Committee Chowk</option>
+                  <option>Waris Khan</option>
+                  <option>Chandni Chowk</option>
+                  <option>Rehmanabad</option>
+                  <option>6th Road</option>
+                  <option>Khatam-e-Nabuwat</option>
+                  <option>Faizabad</option>
+                  <option>IJP Road</option>
+                  <option>Potohar</option>
+                  <option>Khayaban-e-Johar</option>
+                  <option>Faiz Ahmed Faiz</option>
+                  <option>Kashmir Highway</option>
+                  <option>Chaman</option>
+                  <option>Ibn-e-Sina</option>
+                  <option>Katchery</option>
+                  <option>PIMS</option>
+                  <option>Stock Exchange</option>
+                  <option>7th Avenue</option>
+                  <option>Shaheed-e-Millat</option>
+                  <option>Parade Ground</option>
+                  <option>Pak Secretariat</option>
+                </select>
+              </div>
+              <fieldset class="field field-full choice-fieldset">
+                <legend class="field-label">Ticket type</legend>
+                <div class="choice-row">
+                  <div class="choice-pill">
+                    <input
+                      id="single"
+                      type="radio"
+                      name="ticket-type"
+                      value="single"
+                      checked
+                    /><label for="single">Single journey</label>
+                  </div>
+                  <div class="choice-pill">
+                    <input
+                      id="return"
+                      type="radio"
+                      name="ticket-type"
+                      value="return"
+                    /><label for="return">Return journey</label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="passengers">Number of passengers</label
+                ><select id="passengers" name="passengers">
+                  <option>1 passenger</option>
+                  <option>2 passengers</option>
+                  <option>3 passengers</option>
+                  <option>4 passengers</option>
+                  <option>5 passengers</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="travel-date">Travel date</label
+                ><input id="travel-date" name="date" type="date" />
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="button button-block" type="button">
+                Book sample ticket <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </form>
+        </section>
+        <aside>
+          <section class="panel summary-card" aria-labelledby="summary-title">
+            <div class="summary-head">
+              <h2 id="summary-title">Ticket summary</h2>
+              <p>Sample journey confirmation preview</p>
+            </div>
+            <div class="summary-body">
+              <div class="summary-route">
+                <div><span>From</span><strong>Saddar</strong></div>
+                <span class="route-arrow" aria-hidden="true">→</span>
+                <div><span>To</span><strong>Pak Secretariat</strong></div>
+              </div>
+              <div class="summary-row">
+                <span>Ticket</span><strong>Single journey</strong>
+              </div>
+              <div class="summary-row">
+                <span>Passengers</span><strong>1 passenger</strong>
+              </div>
+              <div class="summary-row">
+                <span>Sample fare</span><strong class="mono">PKR 30.00</strong>
+              </div>
+              <div class="summary-row summary-total">
+                <span>Estimated total</span><strong>PKR 30.00</strong>
+              </div>
+              <span class="booking-id">NST-2026-0418</span>
+            </div>
+          </section>
+          <div class="notice">
+            <strong>Front-end demonstration only.</strong> The booking details
+            and ID are sample content. No ticket is issued and no payment
+            processing is available.
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span class="footer-brand">NEXTSTOP</span>
+        <p>
+          Demo interface only. No tickets are issued, no payments are processed,
+          and service details should be confirmed with the metro operator.
+        </p>
+        <span class="footer-mono">RWP ↔ ISB</span>
+      </div>
+    </footer>
+  </body>
+</html>

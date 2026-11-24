@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore all 24 Rawalpindi–Islamabad Red Line stations and terminals.">
+  <title>Terminals &amp; Stations — NextStop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="NextStop home">
+        <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true"><rect x="2" y="2" width="32" height="32" rx="11" fill="#C81E1E"/><path d="M11 25V11h3.2l7 8.8V11H25v14h-3.1l-7.1-8.9V25z" fill="#FFFFFF"/></svg>
+        NEXTSTOP
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Dashboard</a>
+        <a href="booking.html">Booking</a>
+        <a href="terminals.html" aria-current="page">Terminals</a>
+        <a href="lost-found.html">Lost &amp; Found</a>
+        <a href="complaints.html">Complaints</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <header class="page-heading">
+      <h1>Terminals &amp; Stations</h1>
+      <p>Explore the stops between Rawalpindi and Islamabad. The route runs for approximately 24 km, linking Saddar with Pak Secretariat.</p>
+    </header>
+
+    <form class="search-bar" action="#stations" method="get" role="search">
+      <div class="field">
+        <label for="station-search">Find a station</label>
+        <input id="station-search" name="q" type="search" placeholder="Search by station name">
+      </div>
+      <div class="field">
+        <label for="station-area">Area</label>
+        <select id="station-area" name="area">
+          <option>All areas</option>
+          <option>Rawalpindi</option>
+          <option>Islamabad</option>
+        </select>
+      </div>
+      <button class="button" type="button">Search stations</button>
+    </form>
+
+    <section class="panel diagram-card" aria-labelledby="diagram-title">
+      <div class="diagram-top">
+        <div>
+          <h2 id="diagram-title">Red Line route diagram</h2>
+          <p>24 stations · Saddar to Pak Secretariat</p>
+        </div>
+        <div class="diagram-key" aria-label="Station legend">
+          <span class="key-item"><span class="key-dot"></span>Start terminal</span>
+          <span class="key-item"><span class="key-dot end"></span>End terminal</span>
+        </div>
+      </div>
+      <div class="diagram-scroll" role="region" aria-label="Scrollable Red Line diagram" tabindex="0">
+        <svg class="route-svg" viewBox="0 0 1040 340" role="img" aria-labelledby="route-title route-description">
+          <title id="route-title">Twenty-four stops from Saddar to Pak Secretariat</title>
+          <desc id="route-description">A two-row route diagram with numbered stations in travel order. The full station names follow below.</desc>
+          <path class="line-track" d="M70 95 H970 V245 H70"/>
+          <g>
+            <circle class="node node-start" cx="70" cy="95" r="15"/><text class="station-number" x="70" y="95">01</text>
+            <circle class="node" cx="152" cy="95" r="12"/><text class="station-number" x="152" y="95">02</text>
+            <circle class="node" cx="234" cy="95" r="12"/><text class="station-number" x="234" y="95">03</text>
+            <circle class="node" cx="316" cy="95" r="12"/><text class="station-number" x="316" y="95">04</text>
+            <circle class="node" cx="398" cy="95" r="12"/><text class="station-number" x="398" y="95">05</text>
+            <circle class="node" cx="480" cy="95" r="12"/><text class="station-number" x="480" y="95">06</text>
+            <circle class="node" cx="562" cy="95" r="12"/><text class="station-number" x="562" y="95">07</text>
+            <circle class="node" cx="644" cy="95" r="12"/><text class="station-number" x="644" y="95">08</text>
+            <circle class="node" cx="726" cy="95" r="12"/><text class="station-number" x="726" y="95">09</text>
+            <circle class="node" cx="808" cy="95" r="12"/><text class="station-number" x="808" y="95">10</text>
+            <circle class="node" cx="890" cy="95" r="12"/><text class="station-number" x="890" y="95">11</text>
+            <circle class="node" cx="970" cy="95" r="12"/><text class="station-number" x="970" y="95">12</text>
+            <circle class="node" cx="970" cy="245" r="12"/><text class="station-number" x="970" y="245">13</text>
+            <circle class="node" cx="888" cy="245" r="12"/><text class="station-number" x="888" y="245">14</text>
+            <circle class="node" cx="806" cy="245" r="12"/><text class="station-number" x="806" y="245">15</text>
+            <circle class="node" cx="724" cy="245" r="12"/><text class="station-number" x="724" y="245">16</text>
+            <circle class="node" cx="642" cy="245" r="12"/><text class="station-number" x="642" y="245">17</text>
+            <circle class="node" cx="560" cy="245" r="12"/><text class="station-number" x="560" y="245">18</text>
+            <circle class="node" cx="478" cy="245" r="12"/><text class="station-number" x="478" y="245">19</text>
+            <circle class="node" cx="396" cy="245" r="12"/><text class="station-number" x="396" y="245">20</text>
+            <circle class="node" cx="314" cy="245" r="12"/><text class="station-number" x="314" y="245">21</text>
+            <circle class="node" cx="232" cy="245" r="12"/><text class="station-number" x="232" y="245">22</text>
+            <circle class="node" cx="150" cy="245" r="12"/><text class="station-number" x="150" y="245">23</text>
+            <circle class="node node-end" cx="70" cy="245" r="15"/><text class="station-number" x="70" y="245">24</text>
+          </g>
+          <text class="route-direction" x="70" y="55">SADDAR · RAWALPINDI</text>
+          <text class="route-direction" x="970" y="290" text-anchor="end">PAK SECRETARIAT · ISLAMABAD</text>
+        </svg>
+      </div>
+      <div class="route-caption">
+        <span>Start at Saddar and follow the numbered markers.</span>
+        <span>Sequence and names shown in the official travel direction.</span>
+      </div>
+      <ol id="stations" class="station-list">
+        <li>Saddar Terminal</li>
+        <li>Marrir Chowk</li>
+        <li>Liaquat Bagh</li>
+        <li>Committee Chowk</li>
+        <li>Waris Khan</li>
+        <li>Chandni Chowk</li>
+        <li>Rehmanabad</li>
+        <li>6th Road</li>
+        <li>Khatam-e-Nabuwat (Shamsabad)</li>
+        <li>Faizabad</li>
+        <li>IJP Road (I-8 access)</li>
+        <li>Potohar</li>
+        <li>Khayaban-e-Johar</li>
+        <li>Faiz Ahmed Faiz</li>
+        <li>Kashmir Highway</li>
+        <li>Chaman</li>
+        <li>Ibn-e-Sina</li>
+        <li>Katchery</li>
+        <li>PIMS</li>
+        <li>Stock Exchange (Blue Area)</li>
+        <li>7th Avenue</li>
+        <li>Shaheed-e-Millat</li>
+        <li>Parade Ground</li>
+        <li>Pak Secretariat Terminal</li>
+      </ol>
+    </section>
+
+    <section class="info-grid" aria-label="Terminal and service information">
+      <article class="panel info-card">
+        <h2>Saddar Terminal</h2>
+        <p>The Rawalpindi end of the Red Line.</p>
+        <dl>
+          <div><dt>Platforms</dt><dd>Central platform with three docking bays</dd></div>
+          <div><dt>Connections</dt><dd>Local bus and feeder routes nearby</dd></div>
+          <div><dt>Access</dt><dd>Step-free access and lifts at stations</dd></div>
+          <div><dt>Facilities</dt><dd>Ticketing, passenger information, help desk</dd></div>
+        </dl>
+      </article>
+      <article class="panel info-card">
+        <h2>Pak Secretariat Terminal</h2>
+        <p>The Islamabad end of the Red Line.</p>
+        <dl>
+          <div><dt>Platforms</dt><dd>Central platform with three docking bays</dd></div>
+          <div><dt>Connections</dt><dd>Government district and city connections</dd></div>
+          <div><dt>Access</dt><dd>Step-free access and lifts at stations</dd></div>
+          <div><dt>Facilities</dt><dd>Ticketing, passenger information, help desk</dd></div>
+        </dl>
+      </article>
+      <article class="panel info-card">
+        <h2>Service information</h2>
+        <p>Useful details to consider before travelling.</p>
+        <dl>
+          <div><dt>Hours</dt><dd>06:00 AM – 10:00 PM</dd></div>
+          <div><dt>Fare</dt><dd>PKR 30 flat fare*</dd></div>
+          <div><dt>Frequency</dt><dd>Every few minutes at peak times</dd></div>
+        </dl>
+        <ul class="tip-list">
+          <li>Check official notices for current service details.</li>
+          <li>Allow extra time during busy periods.</li>
+          <li>Keep your travel card or ticket ready at entry.</li>
+        </ul>
+      </article>
+    </section>
+    <p class="form-hint source-note">*Hours and fare reflect published PMA information available at the time this demo was prepared; confirm current details with the operator.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-brand">NEXTSTOP</span>
+      <p>Demo interface only. No tickets are issued, no payments are processed, and service details should be confirmed with the metro operator.</p>
+      <span class="footer-mono">RWP ↔ ISB</span>
+    </div>
+  </footer>
+</body>
+</html>

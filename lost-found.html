@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Report a lost item or view sample found-item notices with NextStop."
+    />
+    <title>Lost &amp; Found — NextStop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="NextStop home"
+          ><svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+            <rect x="2" y="2" width="32" height="32" rx="11" fill="#C81E1E" />
+            <path
+              d="M11 25V11h3.2l7 8.8V11H25v14h-3.1l-7.1-8.9V25z"
+              fill="#FFFFFF"
+            /></svg
+          >NEXTSTOP</a
+        >
+        <div class="nav-links">
+          <a href="index.html">Dashboard</a><a href="booking.html">Booking</a
+          ><a href="terminals.html">Terminals</a
+          ><a href="lost-found.html" aria-current="page">Lost &amp; Found</a
+          ><a href="complaints.html">Complaints</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <header class="page-heading">
+        <h1>Lost something?</h1>
+        <p>
+          Tell us what went missing and where you last saw it. If you recognise
+          an item, contact metro administration at a terminal help desk to claim
+          it.
+        </p>
+      </header>
+      <div class="split-layout lost-layout">
+        <section class="panel panel-pad" aria-labelledby="lost-form-title">
+          <h2 id="lost-form-title">REPORT A LOST ITEM</h2>
+          <p class="panel-intro">
+            Share enough detail to help staff identify your belongings.
+          </p>
+          <form action="#" method="get">
+            <div class="form-grid">
+              <div class="field field-full">
+                <label for="item-name">Item name</label
+                ><input
+                  id="item-name"
+                  name="item"
+                  type="text"
+                  placeholder="e.g. black backpack"
+                />
+              </div>
+              <div class="field field-full">
+                <label for="item-description">Description</label
+                ><textarea
+                  id="item-description"
+                  name="description"
+                  placeholder="Colour, brand, distinguishing details, or contents"
+                ></textarea>
+              </div>
+              <div class="field field-full">
+                <label for="last-seen">Last seen station</label
+                ><select id="last-seen" name="station">
+                  <option value="" selected>Select a station</option>
+                  <option>Saddar</option>
+                  <option>Marrir Chowk</option>
+                  <option>Liaquat Bagh</option>
+                  <option>Committee Chowk</option>
+                  <option>Waris Khan</option>
+                  <option>Chandni Chowk</option>
+                  <option>Rehmanabad</option>
+                  <option>6th Road</option>
+                  <option>Khatam-e-Nabuwat</option>
+                  <option>Faizabad</option>
+                  <option>IJP Road</option>
+                  <option>Potohar</option>
+                  <option>Khayaban-e-Johar</option>
+                  <option>Faiz Ahmed Faiz</option>
+                  <option>Kashmir Highway</option>
+                  <option>Chaman</option>
+                  <option>Ibn-e-Sina</option>
+                  <option>Katchery</option>
+                  <option>PIMS</option>
+                  <option>Stock Exchange</option>
+                  <option>7th Avenue</option>
+                  <option>Shaheed-e-Millat</option>
+                  <option>Parade Ground</option>
+                  <option>Pak Secretariat</option>
+                </select>
+              </div>
+              <div class="field field-full">
+                <label for="contact">Contact information</label
+                ><input
+                  id="contact"
+                  name="contact"
+                  type="text"
+                  placeholder="Phone or email"
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="button button-block" type="button">
+                Submit sample report <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </form>
+        </section>
+        <section aria-labelledby="found-items-title">
+          <div class="section-title-row">
+            <div>
+              <h2 id="found-items-title">Recently found</h2>
+              <p>Example notices for this prototype.</p>
+            </div>
+          </div>
+          <div class="item-grid">
+            <article class="panel item-card">
+              <div class="item-illustration">
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                  <path
+                    d="M18 23h28l4 32H14l4-32Z"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M24 24v-5a8 8 0 0 1 16 0v5M23 34h18M25 39v8M39 39v8"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="item-card-body">
+                <h3>Canvas backpack</h3>
+                <p>Navy bag with a small key ring attached.</p>
+                <div class="item-meta">
+                  <span class="tag">Faizabad</span
+                  ><span class="tag tag-date">18 Apr 2026</span>
+                </div>
+              </div>
+            </article>
+            <article class="panel item-card">
+              <div class="item-illustration">
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                  <rect
+                    x="14"
+                    y="12"
+                    width="36"
+                    height="42"
+                    rx="4"
+                    stroke="currentColor"
+                    stroke-width="3"
+                  />
+                  <path
+                    d="M22 21h20M22 28h13M22 44h20"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="39"
+                    cy="35"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="3"
+                  />
+                </svg>
+              </div>
+              <div class="item-card-body">
+                <h3>Notebook</h3>
+                <p>Green cover, blank pages with a name inside.</p>
+                <div class="item-meta">
+                  <span class="tag">PIMS</span
+                  ><span class="tag tag-date">16 Apr 2026</span>
+                </div>
+              </div>
+            </article>
+            <article class="panel item-card">
+              <div class="item-illustration">
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                  <path
+                    d="M16 20h32l-3 35H19l-3-35Z"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M24 20a8 8 0 0 1 16 0M21 29h22"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="32"
+                    cy="39"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="3"
+                  />
+                </svg>
+              </div>
+              <div class="item-card-body">
+                <h3>Umbrella</h3>
+                <p>Compact black umbrella in a fabric sleeve.</p>
+                <div class="item-meta">
+                  <span class="tag">Saddar</span
+                  ><span class="tag tag-date">14 Apr 2026</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="help-note help-note-spaced">
+            These found-item notices are sample content, not live inventory. To
+            claim a real item, speak with metro administration at a terminal
+            help desk.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span class="footer-brand">NEXTSTOP</span>
+        <p>
+          Demo interface only. No tickets are issued, no payments are processed,
+          and service details should be confirmed with the metro operator.
+        </p>
+        <span class="footer-mono">RWP ↔ ISB</span>
+      </div>
+    </footer>
+  </body>
+</html>
